@@ -42,7 +42,7 @@ public class NumberWizard : MonoBehaviour {
 		print ("The lowest number you can pick is " + min);
 		
 		print ("Is the number high or lower than " + guess + "?");
-		print ("Press Up Arrow for higher, Down Arrow for lower, or the 'Space Bar' for equals.");
+		print ("Up = higher, Down = lower, Return = equals.");
 		max = max + 1
 	}
 	void NextGuess(){
