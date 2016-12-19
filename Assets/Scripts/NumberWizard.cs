@@ -4,7 +4,7 @@ using System.Collections;
 
 public class NumberWizard : MonoBehaviour {
 	public Text guessText;
-	int maxGuesses = 10;
+	public int maxGuesses = 10;
 	int max;
 	int min;
 	int guess;
@@ -29,11 +29,11 @@ public class NumberWizard : MonoBehaviour {
 	void StartGame () {
 		max = 1001;
 		min = 1;
-		guess = 500;
-		max = max + 1;
+		NextGuess ();
+		
 	}
 	void NextGuess(){
-		guess = (max + min)/2;
+		guess = Random.Range(min,max+1);
 		guessText.text = guess.ToString ();
 		maxGuesses = maxGuesses-1;
 		if (maxGuesses <= 0){
