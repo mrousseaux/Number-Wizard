@@ -43,7 +43,7 @@ public class NumberWizard : MonoBehaviour {
 		
 		print ("Is the number high or lower than " + guess + "?");
 		print ("Up = higher, Down = lower, Return = equals.");
-		max = max + 1
+		max = max + 1;
 	}
 	void NextGuess(){
 		guess = (max + min)/2;
